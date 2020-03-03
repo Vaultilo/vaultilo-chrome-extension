@@ -15,8 +15,6 @@ function applyPassword(url, user, password) {
 
   function Popup (){
     var hostname;
-    let response = fetch("http://127.0.0.1:3000/extension/passwords");
-    console.log("response")
     var eventMethod = window.addEventListener
     ? "addEventListener"
     : "attachEvent";
@@ -53,7 +51,7 @@ function applyPassword(url, user, password) {
         <div> 
         <iframe  
           frameBorder="none" 
-          src="http://127.0.0.1:3000/extension/view" 
+          src="https://app.vaultilo.com/extension/view" 
           style={{height:"510px", width:"320px",background:"#abcdef",display:"block",margin:"0px"}}
          >
         </iframe>

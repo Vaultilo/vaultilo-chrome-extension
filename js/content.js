@@ -39,27 +39,7 @@
           image.addEventListener(
             "click",
             function() {
-              var frame = document.getElementById("autofill-window");
-              if (frame) {
-                frame.remove();
-              } else {
-               
-                var topPopupIframe = positionFeilds.y + user.offsetHeight + 2;
-                var leftPopupIframe = positionFeilds.x;
-                var iframe = document.createElement("IMG");
-                iframe.id = "autofill-window";
-                iframe.src = "https://app.vaultilo.com/favicon.ico";
-                iframe.style.cssText =
-                  "position:fixed;top:" +
-                  topPopupIframe +
-                  "px;left:" +
-                  leftPopupIframe +
-                  "px;display:block;" +
-                  "width:" +
-                  150 +
-                  "px;height:150px;z-index:1000;";
-                document.body.appendChild(iframe);
-              }
+             //Handle the icon click in the form 
               
             },
             false
