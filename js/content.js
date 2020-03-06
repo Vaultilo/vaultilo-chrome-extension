@@ -36,16 +36,15 @@
             leftButton +
             "px;display:block; z-index:1000;border: none;";
   
-          image.addEventListener(
-            "click",
-            function() {
-             //Handle the icon click in the form 
-              
-            },
-            false
-          );
-  
+            image.addEventListener(
+              "click",
+              function() {
+              //Handle icon click 
+              },
+              false
+            );
           document.body.appendChild(image);
+
       
           var eventMethod = window.addEventListener
             ? "addEventListener"
